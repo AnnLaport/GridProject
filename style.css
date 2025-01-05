@@ -1,0 +1,58 @@
+
+
+*{
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    --main-color-yellow: #F7D560;
+    --main-color-purple: #6D5ACF;
+    --main-color-romance: #FFFEFD;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50vh);
+    justify-content: center;
+    padding: 5px;
+    gap: 5px; 
+}
+
+main>div{
+    border-radius: 20px;
+    background-color: coral;
+    text-align: center;
+    align-content: center;
+}
+
+#createPostButton{
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--main-color-yellow);
+    border: none;
+    color: var(--main-color-purple);
+}
+
+#quicker{
+    color: var(--main-color-purple);
+}
+
+#createPost{
+    background-color: #FDF0DC;
+}
+
+#socialMedia{
+    padding: 1rem;
+    background-color: #6D5ACF;
+    color: white;
+}
+
+#socialMedia strong{
+    color: var(--main-color-yellow);
+}
