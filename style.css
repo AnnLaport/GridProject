@@ -7,7 +7,7 @@
     --main-color-yellow: #F7D560;
     --main-color-purple: #6D5ACF;
     --main-color-romance: #FFFEFD;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body{
@@ -17,17 +17,18 @@ body{
 main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 50vh);
+    grid-template-rows: repeat(8, auto);
     justify-content: center;
     padding: 5px;
-    gap: 5px; 
+    row-gap: 15px; 
+    column-gap: 10px;
 }
 
 main>div{
     border-radius: 20px;
-    background-color: coral;
     text-align: center;
     align-content: center;
+    padding: 1rem;
 }
 
 #createPostButton{
@@ -45,6 +46,7 @@ main>div{
 
 #createPost{
     background-color: #FDF0DC;
+    padding: 2rem 0rem;
 }
 
 #socialMedia{
@@ -55,4 +57,63 @@ main>div{
 
 #socialMedia strong{
     color: var(--main-color-yellow);
+}
+
+#consistentPosting{
+    background-color: var(--main-color-yellow);
+    text-align: start;
+    padding: 1rem;
+}
+
+#consistentPosting>img{
+    width: 60%;
+}
+
+#schedule{
+    background-color: #dcd1fc;
+    padding: 1rem;
+}
+
+#schedule>img{
+    width: 80%;
+}
+
+#growFollowers{
+    padding: 1rem;
+    background-color: var(--main-color-purple);
+    color: white;
+}
+
+#growFollowers>img{
+    width: 80%;
+    height: 60%;
+}
+
+#fasterAudience{
+    padding: 1rem;
+    background-color: var(--main-color-romance);
+    text-align: start;
+}
+
+#fasterAudience>h1{
+    font-size: 3rem;
+}
+
+#fasterAudience>img{
+    width: 60%;
+}
+
+#AIContent{
+    background-color: var(--main-color-yellow);
+    text-align: start;
+}
+
+#AIContent>img{
+    height: 80%;
+    width: 60%;
+}
+
+#multiplePlatforms{
+    background-color: white;
+    padding: 1rem;
 }
